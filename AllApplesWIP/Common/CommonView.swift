@@ -55,3 +55,16 @@ public extension CommonView {
   
 }
 
+// INFO: Example of usage -
+#if os(OSX)
+class ColorView: AView {
+  override var wantsUpdateLayer : Bool {
+    get { return true }
+  }
+  
+  override func updateLayer() {
+    self.layer?.backgroundColor = NSColor.systemRed.cgColor
+  }
+}
+#endif
+
