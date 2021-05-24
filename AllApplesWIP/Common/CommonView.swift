@@ -19,8 +19,11 @@ public class CommonView: AGestureRecognizerView {
   // MARK: Template Overrides -
   
   override public func customInit() {
+    // call super to setup `AGestureRecognizerView` gestures
     super.customInit()
-    myColor = AColor.systemPink
+    forcedLayer.borderWidth = 10.0
+    forcedLayer.borderColor = AColor.systemGray.cgColor
+    forcedLayer.cornerRadius = 20.0
   }
   
 }
