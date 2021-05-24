@@ -21,8 +21,8 @@ class CommonViewController: AViewController {
   // MARK: -
   // MARK: Properties -
   
-  private(set) public lazy var myView: ALayerView = {
-    let v = ALayerView()
+  private(set) public lazy var myView: CommonView = {
+    let v = CommonView()
     return v
   }()
   
@@ -40,7 +40,7 @@ class CommonViewController: AViewController {
     if let aView = view as? ALayerView {
       
       #if os(iOS) || os(tvOS)
-      aView.myColor = AColor.systemRed
+      aView.myColor = AColor.systemTeal
       #endif
       
       #if os(OSX)
@@ -53,3 +53,5 @@ class CommonViewController: AViewController {
   }
 
 }
+
+

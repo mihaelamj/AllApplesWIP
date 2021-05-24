@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A91B6321265BE7EA00F11E9D /* CommonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91B6320265BE7EA00F11E9D /* CommonView.swift */; };
+		A91B6322265BE7EA00F11E9D /* CommonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91B6320265BE7EA00F11E9D /* CommonView.swift */; };
 		A946DAE9265BDBAA004AFC77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946DAE8265BDBAA004AFC77 /* AppDelegate.swift */; };
 		A946DAEB265BDBAB004AFC77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A946DAEA265BDBAB004AFC77 /* Assets.xcassets */; };
 		A946DAEE265BDBAB004AFC77 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A946DAEC265BDBAB004AFC77 /* MainMenu.xib */; };
@@ -59,6 +61,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A91B6320265BE7EA00F11E9D /* CommonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonView.swift; sourceTree = "<group>"; };
 		A946DAE5265BDBAA004AFC77 /* AllApplesWIP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllApplesWIP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A946DAE8265BDBAA004AFC77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A946DAEA265BDBAB004AFC77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -206,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				A946DB8F265BDD7E004AFC77 /* CommonViewController.swift */,
+				A91B6320265BE7EA00F11E9D /* CommonView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -327,6 +331,7 @@
 				A946DB6F265BDD2F004AFC77 /* AFont.swift in Sources */,
 				A946DB85265BDD2F004AFC77 /* AFontTextStyle.swift in Sources */,
 				A946DB12265BDC2E004AFC77 /* main.swift in Sources */,
+				A91B6321265BE7EA00F11E9D /* CommonView.swift in Sources */,
 				A946DB6B265BDD2F004AFC77 /* AContentMode.swift in Sources */,
 				A946DB7F265BDD2F004AFC77 /* AGestureRecognizer.swift in Sources */,
 				A946DB79265BDD2F004AFC77 /* FontWeight.swift in Sources */,
@@ -361,6 +366,7 @@
 				A946DB80265BDD2F004AFC77 /* AGestureRecognizer.swift in Sources */,
 				A946DB84265BDD2F004AFC77 /* AView.swift in Sources */,
 				A946DB74265BDD2F004AFC77 /* CGSize+Extra.swift in Sources */,
+				A91B6322265BE7EA00F11E9D /* CommonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
