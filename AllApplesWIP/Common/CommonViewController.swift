@@ -40,12 +40,13 @@ class CommonViewController: AViewController {
     if let aView = view as? ALayerView {
       
       #if os(iOS) || os(tvOS)
-      aView.myColor = AColor.systemTeal
+      aView.myColor = AColor.randomColor()
       #endif
       
       #if os(OSX)
-      aView.frame = CGRect(x: 0, y: 0, width: 1000, height: 1000)
-      aView.myColor = AColor.systemBlue
+      var size = AScreen.supposedSize()
+      if size.width > 1000 { size = CGSize(width: 1000, height: 1000) }
+      aView.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: size)
       #endif
       
     }

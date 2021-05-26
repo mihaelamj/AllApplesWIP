@@ -21,11 +21,21 @@ public class CommonView: AGestureRecognizerView {
   override public func customInit() {
     // call super to setup `AGestureRecognizerView` gestures
     super.customInit()
-    forcedLayer.borderWidth = 10.0
+    forcedLayer.borderWidth = 20.0
     forcedLayer.borderColor = AColor.systemGray.cgColor
     forcedLayer.cornerRadius = 20.0
+    let rr = readableRect()
   }
   
+  #if os(OSX)
+  
+  // MARK: -
+  // MARK: Framework Overrides -
+  
+  public override func updateLayer() {
+    forcedLayer.backgroundColor = AColor.randomColor().cgColor
+  }
+  #endif
 }
 
 // MARK: -
@@ -33,12 +43,8 @@ public class CommonView: AGestureRecognizerView {
 
 public extension CommonView {
   
-  override func rotationChanged(degrees: Float) {
-    debugPrint("Rotation- degrees: \(degrees)")
-  }
-  
-  override func rotationChanged(radians: Float) {
-    debugPrint("Rotation- radians: \(radians)")
+  override func rotationChanged(degrees: Float, radians: Float)  {
+    debugPrint("Rotation: degrees: \(degrees), radians: \(radians)")
   }
   
   override func displacementChanged(displacement: CGPoint) {
